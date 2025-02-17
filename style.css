@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: transparent;
+    position: absolute;
+    z-index: 1000;
+    height: 123px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+nav{
+    width: 1420px;
+    max-width: 1420px;
+    min-width: 1420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+ul{
+    display: flex;
+    text-decoration: none;
+    margin: 0rem 4.938rem 0rem 9.438rem;
+}
+
+ul li a{
+    white-space: nowrap;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    margin-right: 4.5rem;
+}
+
+.botoes{
+    display: flex;
+}
+
+.entrar{
+    width: 99px;
+    border: 1px solid #0F7194;
+    font-size: 20px;
+    color: #0F7194;
+    background-color: #0D0D0D;
+    border-radius: 8px;
+    padding: 16px 24px;
+    margin-right: 1.25rem;
+}
+
+.cadastrar{
+    border: none;
+    width: 161px;
+    font-size: 20px;
+    color: white;
+    background-color: #0F7194;
+    border-radius: 8px;
+    padding: 16px 24px;
+}
+
+.sec-1{
+    height: 1080px;
+    background-image: url(img/bg-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sec-1-text{
+    width: 29.125rem;
+    margin-left: 6.25rem;
+}
+
+h1{
+    color: white;
+    font-size: 64px;
+}
+
+.destaque{
+    color: #0F7194;
+}
+
+.sec-1-text p{
+    color: white;
+    margin: 32px 0px;
+    font-size: 24px;
+}
+
+.comecar{
+    width: 203px;
+    padding: 16px;
+    height: 64px;
+    font-size: 24px;
+}
+
+.sec-1-img{
+    margin-left: 120px;
+    position: relative;
+    width: 710px;
+}
+
+.logo-vetor{
+    position: absolute;
+    right: -13px;
+    top: 120px;
+    z-index: 1;
+}
+
+.celular{
+    position: relative;
+    right: -265px;
+    z-index: 2;
+    animation: subirDescer 2s ease-in-out infinite alternate;
+}
+
+@keyframes subirDescer {
+    0% {
+      transform: translateY(0) rotateX(0);
+    }
+    100% {
+      transform: translateY(-10px) rotateY(10deg);
+    }
+  }
+.notificacoes{
+    position: absolute;
+    right: 280px;
+    top: 400px;
+    z-index: 3;
+}
+
+.sec-2{
+    height: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sec-2-col{
+    width: 710px;
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.sec-2-col p{
+    width: 569px;
+    height: 67px;
+    margin-bottom: 96px;
+    font-size: 32px;
+    text-align: center;
+}
+
+
+.sec-2-card{
+    width: 710px;
+    min-height: 716px;
+    background-color: #EEEEEE ;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec-2-card h2{
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+}
+
+.sec-3{
+    overflow-x: hidden;
+    height: 1080px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-3-cont{
+    width: 1445px;
+    height: 978px;
+    margin-left: 14.375rem;
+    display: flex;
+    align-items: center;
+}
+
+.sec-3-text{
+    width: 467px;
+    height: 587px;
+    color: white;
+}
+
+.sec-3-text h2{
+    font-size: 64px;
+    padding-bottom: 32px;
+    padding-top: 40px;
+}
+
+.sec-3-text p{
+    font-size: 24px;
+}
+
+.sec-3-div{
+    margin-top: 48px;
+}
+
+.sec-3-op{
+    padding: 16px 15px 16px 24px;
+    border-radius: 12px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.sec-3-op-num{
+    margin-top: 16px;
+    font-size: 40px !important; 
+}
+
+.sec-3-met{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.sec-3-met-b{
+    border: 1px solid #0F7194;
+}
+
+footer{
+    background-color: #0F7194;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foo-cont{
+    display: flex;
+    justify-content: space-between;
+    height: 408px;
+    width: 1460px;
+}
+
+.foo-info{
+    color: white;
+    display: flex;
+    gap: 56px;
+    margin-right: 43px;
+}
+
+.foo-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.foo-col h3{
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.foo-col span{
+    font-size: 32px;
+    margin-bottom: 32px;
+}
