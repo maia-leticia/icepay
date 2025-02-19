@@ -11,13 +11,12 @@
 <body>
     <header id="header">
         <nav>
-            <img src="img/LOGO.png" alt="logo-icepay">
+            <a href="#sec-1"><img src="img/LOGO.png" alt="logo-icepay"></a>
              <ul>
-                <li class="link-menu"><a href="#">Funcionalidades</a></li>
-                <li class="link-menu"><a href="#">Taxas e prazos</a></li>
-                <li class="link-menu"><a href="#">Premiações</a></li>
-                <li class="link-menu"><a href="#">Ajuda</a></li>
-                <li><a href="#">Integrações</a></li>
+                <li class="link-menu"><a href="#sec-2">Funcionalidades</a></li>
+                <li class="link-menu"><a href="#sec-3">Taxas e prazos</a></li>
+                <li><a href="#footer">Ajuda</a></li>
+
             </ul>
             <div class="botoes">
                 <button class="entrar">Entrar</button>
@@ -26,7 +25,7 @@
         </nav>
     </header>
     <main>
-        <section class="sec-1">
+        <section class="sec-1" id="sec-1">
             <section class="sec-1-text">
                 <h1 class="bold">Desperte o potencial <span class="destaque bold">do seu produto digital.</span></h1>
                 <p>Conquiste mais clientes e aumente seus lucros com uma plataforma que entende suas necessidades.</p>
@@ -38,7 +37,7 @@
                 <img src="img/iphone16_pro 1.png" class="celular" alt="Celular">
             </section>
         </section>
-        <section class="sec-2">
+        <section class="sec-2" id="sec-2">
             <section class="sec-2-col sec-2-col-mar">
                 <p class="sec-2-p">A <b>resposta</b> que você precisa, <br> quando você precisa.</p>
                 <section class="sec-2-card">
@@ -54,7 +53,7 @@
                 </section>
             </section>
         </section>
-        <section class="sec-3">
+        <section class="sec-3" id="sec-3">
             <section class="sec-3-cont">
                 <section class="sec-3-text">
                     <img src="img/logo-2.png" alt="Logo">
@@ -83,7 +82,7 @@
             </section>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <section class="foo-cont">
             <section>
                 <img src="img/LOGO-3.png" alt="logo">
@@ -132,6 +131,15 @@
         duration: 900,
         easing: 'ease-in-out',
     });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (event) {
+        event.preventDefault(); // Impede a alteração da URL
+    
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
 
 </script>
 </html>
