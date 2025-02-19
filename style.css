@@ -20,6 +20,7 @@
 
 }
 
+
 *{
     margin: 0px;
     padding: 0px;
@@ -28,6 +29,10 @@
     font-weight: normal;
 }
 
+
+button:hover{
+    cursor: pointer;
+}
 
 header{
     background-color: transparent;
@@ -227,7 +232,7 @@ h1{
 
 .sec-2-card{
     width: 710px;
-    min-height: 716px;
+    min-height: 730px;
     background-color: #EEEEEE ;
     border-radius: 16px;
     display: flex;
