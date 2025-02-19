@@ -1,7 +1,31 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('font/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('font/Poppins-Bold.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('font/Poppins-Light.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('font/Poppins-Medium.ttf') format('truetype');
+
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins-Regular';
+    font-weight: normal;
 }
 
 
@@ -14,6 +38,11 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: fixed;
+}
+
+.sticky {
+    background-color: #0D0D0D;
 }
 
 nav{
@@ -23,7 +52,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -45,22 +73,26 @@ ul li a{
 
 .botoes{
     display: flex;
+    align-items: center;
 }
 
 .entrar{
-    width: 99px;
+    width: 107px;
+    height: 62px;
     border: 1px solid #0F7194;
     font-size: 20px;
     color: #0F7194;
     background-color: #0D0D0D;
     border-radius: 8px;
-    padding: 16px 24px;
+
     margin-right: 1.25rem;
+    text-align: center;
 }
 
 .cadastrar{
     border: none;
-    width: 161px;
+    width: 187px;
+    height: 62px;
     font-size: 20px;
     color: white;
     background-color: #0F7194;
@@ -86,8 +118,13 @@ ul li a{
 }
 
 h1{
+    line-height: 70px;
     color: white;
     font-size: 64px;
+}
+
+.bold{
+    font-family: 'Poppins-Bold';
 }
 
 .destaque{
@@ -101,9 +138,9 @@ h1{
 }
 
 .comecar{
-    width: 203px;
+    width: 231px;
     padding: 16px;
-    height: 64px;
+    height: 68px;
     font-size: 24px;
 }
 
@@ -127,6 +164,23 @@ h1{
     animation: subirDescer 2s ease-in-out infinite alternate;
 }
 
+
+.notificacoes{
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    animation: rotate-not 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes rotate-not {
+    0% {
+        transform: translateY(0) rotateX(0);
+      }
+      100% {
+        transform: translateY(-3.5px) rotateY(5deg);
+      }
+  }
+
 @keyframes subirDescer {
     0% {
       transform: translateY(0) rotateX(0);
@@ -135,6 +189,7 @@ h1{
       transform: translateY(-10px) rotateY(10deg);
     }
   }
+
 .notificacoes{
     position: absolute;
     right: 280px;
@@ -162,7 +217,7 @@ h1{
 }
 
 .sec-2-col p{
-    width: 569px;
+    width: 675px;
     height: 67px;
     margin-bottom: 96px;
     font-size: 32px;
@@ -190,14 +245,14 @@ h1{
 .sec-3{
     overflow-x: hidden;
     height: 1080px;
-    background-color: #000000;
+    background-color: #0D0D0D;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .sec-3-cont{
-    width: 1445px;
+    width: 1470px;
     height: 978px;
     margin-left: 14.375rem;
     display: flex;
@@ -205,15 +260,16 @@ h1{
 }
 
 .sec-3-text{
-    width: 467px;
+    width: 594px;
     height: 587px;
     color: white;
 }
 
 .sec-3-text h2{
+    font-family: 'Poppins-Bold';
     font-size: 64px;
-    padding-bottom: 32px;
-    padding-top: 40px;
+    padding-bottom: 7px;
+    padding-top: 15px;
 }
 
 .sec-3-text p{
@@ -221,18 +277,18 @@ h1{
 }
 
 .sec-3-div{
-    margin-top: 48px;
+    margin-top: 35px;
 }
 
 .sec-3-op{
-    padding: 16px 15px 16px 24px;
+    padding: 16px 16px 12px 24px;
     border-radius: 12px;
     border: 1px solid white;
     margin-bottom: 20px;
 }
 
 .sec-3-op-num{
-    margin-top: 16px;
+    margin-top: 8px;
     font-size: 40px !important; 
 }
 
@@ -248,7 +304,7 @@ h1{
 
 footer{
     background-color: #0F7194;
-    height: 600px;
+    height: 438px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,13 +313,14 @@ footer{
 .foo-cont{
     display: flex;
     justify-content: space-between;
-    height: 408px;
+
     width: 1460px;
 }
 
 .foo-info{
     color: white;
     display: flex;
+    height: 280px;
     gap: 56px;
     margin-right: 43px;
 }
@@ -276,9 +333,11 @@ footer{
 .foo-col h3{
     font-size: 32px;
     margin-bottom: 40px;
+    font-family: 'Poppins-Medium';
 }
 
 .foo-col span{
     font-size: 32px;
     margin-bottom: 32px;
+    font-family: 'Poppins-Light';
 }
