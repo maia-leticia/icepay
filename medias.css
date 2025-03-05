@@ -4,9 +4,14 @@
       }
   }
 
+@media (max-width: 650px) {
+    body {
+        zoom: 40%;
+      }
+    }
+
 @media(max-width: 1200px){
     body{
-        zoom: 75%;
         overflow-x: hidden;
     }
     .menu-hamb{
