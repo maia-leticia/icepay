@@ -3,3 +3,80 @@
         zoom: 80%;
       }
   }
+
+@media(max-width: 1200px){
+    body{
+        zoom: 75%;
+        overflow-x: hidden;
+    }
+    .menu-hamb{
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+    .botoes{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 0px 96px;
+        min-width: 300px;
+    }
+    .menu{
+        width: 300px;
+        background-color: #0D0D0D;
+        padding: 32px 24px;
+        border-radius: 12px;
+        flex-direction: column;
+        position: absolute;
+        top: 140px; 
+        z-index: 3000;
+        right: 1rem;
+        display: none;
+    }
+    .menu li{
+        margin-bottom: 20px;
+    }
+    .menu.active{
+        display: flex;
+    }
+    .sec-1{
+        flex-direction: column;
+        height: 1934px;
+    }
+    .sec-1-text{
+        width: 37rem;
+        margin-bottom: 140px;
+    }
+    .sec-2{
+        flex-direction: column;
+        height: 2300px;
+    }
+    .sec-2-col-mar{
+        margin-bottom: 270px;
+    }
+    .sec-3{
+        height: 2000px;
+    }
+    .sec-3-cont{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0px;
+        height: 1600px;
+    }
+
+    .sec-1-img{
+        margin: 0px 0px;
+    }
+
+    .rel-3{
+        transform: rotate(90deg);
+    }
+    .logo-foot{
+        display: none;
+    }
+    .foo-cont{
+        margin: 0px 0px;
+        width: 650px;
+    }
+}
