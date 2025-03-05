@@ -8,12 +8,6 @@
         zoom: 45%;
     }
 }
-@media(max-width: 353px){
-    body{
-        zoom: 50%;
-    }
-}
-
 @media(max-width: 1200px){
     body{
         overflow-x: hidden;
@@ -54,7 +48,7 @@
         height: 1934px;
     }
     .sec-1-text{
-        width: 37rem;
+        width: 550px;
         margin-bottom: 140px;
     }
     .sec-2{
