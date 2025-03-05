@@ -50,6 +50,10 @@ header{
     background-color: #0D0D0D;
 }
 
+.menu-hamb{
+    display: none;
+}
+
 nav{
     width: 1420px;
     max-width: 1420px;
@@ -60,7 +64,7 @@ nav{
 }
 
 
-ul{
+.menu{
     list-style: none;
     display: flex;
     text-decoration: none;
