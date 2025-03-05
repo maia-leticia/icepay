@@ -12,16 +12,18 @@
     <header id="header">
         <nav>
             <a href="#sec-1"><img src="img/LOGO.png" alt="logo-icepay"></a>
-             <ul>
+             <ul class="menu">
                 <li class="link-menu"><a href="#sec-2">Funcionalidades</a></li>
                 <li class="link-menu"><a href="#sec-3">Taxas e prazos</a></li>
                 <li><a href="#footer">Ajuda</a></li>
 
             </ul>
+
             <div class="botoes">
                 <button class="entrar">Entrar</button>
                 <button class="cadastrar">Cadastre-se</button>
              </div>
+            <div class="menu-hamb"><img src="img/menu.png" alt="" srcset=""></div>
         </nav>
     </header>
     <main>
@@ -77,15 +79,15 @@
                     </div>
                 </section>
                 <section>
-                    <img src="img/relogio-2.png" alt="RELOGIO-2">
+                    <img src="img/relogio-2.png" alt="RELOGIO-2" class="rel-3">
                 </section>
             </section>
         </section>
     </main>
     <footer id="footer">
         <section class="foo-cont">
-            <section>
-                <img src="img/LOGO-3.png" alt="logo">
+            <section class="logo-foot">
+                <img src="img/LOGO-3.png" alt="logo" >
             </section>
             <section class="foo-info">
                 <section class="foo-col">
@@ -139,6 +141,15 @@
         const target = document.querySelector(this.getAttribute('href'));
         target.scrollIntoView({ behavior: 'smooth' });
   });
+});
+    
+    document.querySelector(".menu-hamb").addEventListener("click", function() {
+        document.querySelector(".menu").classList.toggle("active");
+    });
+    document.addEventListener("click", function(event) {
+        if (!document.querySelector(".menu").contains(event.target) && !document.querySelector(".menu-hamb").contains(event.target)) {
+            document.querySelector(".menu").classList.remove("active");
+  }
 });
 
 </script>
