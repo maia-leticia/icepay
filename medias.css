@@ -8,6 +8,11 @@
         zoom: 45%;
     }
 }
+@media(max-width: 353px){
+    body{
+        zoom: 50%;
+    }
+}
 
 @media(max-width: 1200px){
     body{
