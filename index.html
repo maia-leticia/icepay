@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="medias.css">
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -121,6 +121,7 @@
 });
 
 
+if (window.innerWidth > 650) { 
     ScrollReveal().reveal('.sec-2-p', {
         origin: 'bottom',
         distance: '50px',
@@ -134,6 +135,7 @@
         duration: 900,
         easing: 'ease-in-out',
     });
+}
 
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
