@@ -20,10 +20,10 @@ Para rodar o projeto localmente:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/icepay-landing-page.git
+git clone https://github.com/maia-leticia/icepay.git
 
 # Entre na pasta do projeto
-cd icepay-landing-page
+cd icepay
 
 # Abra o arquivo index.html no navegador
 ```
